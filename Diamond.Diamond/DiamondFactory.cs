@@ -10,18 +10,23 @@ namespace Diamond.Diamond
         public string PrintDiamond(char width)
         {
             if (width == 'A') return "A";
-            var diamond = "";
+            var upper = "";
+            var lower = "";
 
             for (char curr = 'A'; curr < width + 1; curr++)
             {
-                diamond = diamond + GetRow(width, curr);
+                upper = upper + GetRow(width, curr);
+                if (curr != width)
+                {
+                    lower = GetRow(width, curr) + lower;
+                }
             }
-            return diamond;
+            return upper + lower;
         }
         private string GetRow(char width, char current)
         {
             var spacesBeforeAfter = GetSpacesBeforeAfter(width, current);
-            if (current == 'A') return spacesBeforeAfter + current + spacesBeforeAfter;
+            if (current == 'A') return Environment.NewLine + spacesBeforeAfter + current + spacesBeforeAfter;
             var spacesBetween = GetSpacesBetween(current);
             return Environment.NewLine + spacesBeforeAfter + current + spacesBetween + current + spacesBeforeAfter;
         }
