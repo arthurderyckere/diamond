@@ -24,7 +24,7 @@ namespace Diamond.Test
             var diamond = new DiamondFactory();
 
             var result = diamond.PrintDiamond('B');
-            Assert.AreEqual(" A \r\nB B\r\n A ", result);
+            Assert.AreEqual("\r\n A \r\nB B\r\n A ", result);
         }
         [Test]
         public void Assert_PrintDiamond_C_Returns_ABBCCBBA()
@@ -32,7 +32,7 @@ namespace Diamond.Test
             var diamond = new DiamondFactory();
 
             var result = diamond.PrintDiamond('C');
-            Assert.AreEqual("  A  \r\n B B \r\nC   C\r\n B B \r\n  A  ", result);
+            Assert.AreEqual("\r\n  A  \r\n B B \r\nC   C\r\n B B \r\n  A  ", result);
         }
     }
 }
