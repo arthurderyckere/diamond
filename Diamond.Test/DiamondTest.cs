@@ -24,7 +24,7 @@ namespace Diamond.Test
             var diamond = new DiamondFactory();
 
             var result = diamond.PrintDiamond('B');
-            Assert.AreEqual(" A /nB B/n A ", result);
+            Assert.AreEqual(" A /r/nB B/r/n A ", result);
         }
     }
 }
