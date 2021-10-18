@@ -1,0 +1,11 @@
+C:\repos\Diamond\Diamond.Diamond\bin\Debug\netcoreapp3.1\Diamond.Diamond.exe
+C:\repos\Diamond\Diamond.Diamond\bin\Debug\netcoreapp3.1\Diamond.Diamond.deps.json
+C:\repos\Diamond\Diamond.Diamond\bin\Debug\netcoreapp3.1\Diamond.Diamond.runtimeconfig.json
+C:\repos\Diamond\Diamond.Diamond\bin\Debug\netcoreapp3.1\Diamond.Diamond.runtimeconfig.dev.json
+C:\repos\Diamond\Diamond.Diamond\bin\Debug\netcoreapp3.1\Diamond.Diamond.dll
+C:\repos\Diamond\Diamond.Diamond\bin\Debug\netcoreapp3.1\Diamond.Diamond.pdb
+C:\repos\Diamond\Diamond.Diamond\obj\Debug\netcoreapp3.1\Diamond.Diamond.csprojAssemblyReference.cache
+C:\repos\Diamond\Diamond.Diamond\obj\Debug\netcoreapp3.1\Diamond.Diamond.AssemblyInfoInputs.cache
+C:\repos\Diamond\Diamond.Diamond\obj\Debug\netcoreapp3.1\Diamond.Diamond.AssemblyInfo.cs
+C:\repos\Diamond\Diamond.Diamond\obj\Debug\netcoreapp3.1\Diamond.Diamond.dll
+C:\repos\Diamond\Diamond.Diamond\obj\Debug\netcoreapp3.1\Diamond.Diamond.pdb

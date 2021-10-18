@@ -1,3 +1,5 @@
+using System;
+
 namespace Diamond.Diamond
 {
     /**
@@ -12,9 +14,19 @@ namespace Diamond.Diamond
 
             for (char a = 'A'; a < width; a++)
             {
-                diamond = diamond + a;
+                diamond = diamond
+                    + Environment.NewLine
+                    + GetSpacesBeforeAfter(width, a)
+                    + a
+                    + GetSpacesBeforeAfter(width, a);
             }
             return diamond;
+        }
+
+        private string GetSpacesBeforeAfter(char width, char current)
+        {
+            var length = ((short)width) - ((short)current);
+            return new String(' ', length);
         }
     }
 }
