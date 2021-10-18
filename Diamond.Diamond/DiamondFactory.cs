@@ -14,26 +14,27 @@ namespace Diamond.Diamond
 
             for (char curr = 'A'; curr < width + 1; curr++)
             {
-                diamond = diamond
-                    + Environment.NewLine
-                    + GetSpacesBeforeAfter(width, curr)
-                    + curr
-                    + GetSpacesBetween(curr)
-                    + curr
-                    + GetSpacesBeforeAfter(width, curr);
+                diamond = diamond + GetRow(width, curr);
             }
             return diamond;
+        }
+        private string GetRow(char width, char current)
+        {
+            var spacesBeforeAfter = GetSpacesBeforeAfter(width, current);
+            if (current == 'A') return spacesBeforeAfter + current + spacesBeforeAfter;
+            var spacesBetween = GetSpacesBetween(current);
+            return Environment.NewLine + spacesBeforeAfter + current + spacesBetween + current + spacesBeforeAfter;
         }
         private string GetSpacesBeforeAfter(char width, char current)
         {
             var length = ((short)width) - ((short)current);
-            return new String('_', length);
+            return new String(' ', length);
         }
         private string GetSpacesBetween(char current)
         {
             char a = 'A';
             var length = ((((short)current) - ((short)a)) * 2) - 1;
-            return length <= 0 ? "" : new String('_', length);
+            return length <= 0 ? "" : new String(' ', length);
         }
     }
 }
