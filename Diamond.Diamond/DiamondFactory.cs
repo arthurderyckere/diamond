@@ -8,7 +8,13 @@ namespace Diamond.Diamond
         public string PrintDiamond(char width)
         {
             if (width == 'A') return "A";
-            return null;
+            var diamond = "";
+
+            for (char a = 'A'; a < width; a++)
+            {
+                diamond = diamond + a;
+            }
+            return diamond;
         }
     }
 }

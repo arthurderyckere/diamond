@@ -6,7 +6,8 @@ namespace Diamond.Diamond
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            var diamond = new DiamondFactory();
+            Console.WriteLine(diamond.PrintDiamond('C'));
         }
     }
 }
